@@ -1,69 +1,162 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if lt IE 8]><html class="no-js ie ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
 <head>
 
-   <!--- Basic Page Needs
-   ================================================== -->
+   <!-- Basic Page Needs -->
    <meta charset="utf-8">
-	<title>Gwyn's Resume</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+   <title>Thea V's Portfolio</title>
+   <meta name="description" content="">
+   <meta name="author" content="">
 
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <!-- Mobile Specific Metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
-    ================================================== -->
+   <!-- CSS -->
    <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
 
-   <!-- Script
-   ================================================== -->
+   <!-- Script -->
    <script src="js/modernizr.js"></script>
-   <script src="main.js"></script>
+   <script src="js/main.js"></script>
 
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
+   <!-- Favicons -->
+   <link rel="shortcut icon" href="favicon.png">
+
+   <style>
+      .projects-container {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+      }
+
+      .project-column {
+         width: calc(33.33% - 20px);
+         margin-bottom: 40px;
+      }
+
+      .skills {
+         list-style: none;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin-top: 20px;
+         padding: 0;
+      }
+
+      .skills li {
+         margin: 0 10px;
+         text-align: center;
+      }
+
+      .skills img {
+         width: 500px; /* Adjust the size as needed */
+         height: 100px; /* Adjust the size as needed */
+         border-radius: 50%;
+      }
+
+      hr {
+         margin-top: 20px;
+         margin-bottom: 20px;
+         border: 0;
+         border-top: 1px solid #ccc;
+      }
+
+      body {
+         max-width: 1300px; /* Adjust the value as needed */
+         margin: 0 auto;
+         padding: 0 20px;
+         background: linear-gradient(to top, rgb(55, 50, 51), rgb(32, 51, 73));
+
+      }
+
+      /* Animation for "Hi, Thea" */
+      .banner-text h1 {
+         position: relative;
+         opacity: 0;
+         top: -50px;
+      }
+
+      .animated-letter {
+         display: inline-block;
+         animation-name: letterAnimation;
+         animation-duration: 1s;
+         animation-fill-mode: both;
+         animation-timing-function: ease-out;
+         opacity: 0;
+         transform: translateY(-20px);
+      }
+
+      @keyframes letterAnimation {
+         0% {
+            opacity: 0;
+            transform: translateY(-20px);
+         }
+         100% {
+            opacity: 1;
+            transform: translateY(0);
+         }
+      }
+      .nine.columns {
+      width: 80%; /* Adjust the width as needed */
+   }
+   </style>
 
 </head>
 
 <body>
 
-   <!-- Header
-   ================================================== -->
+   <!-- Header -->
    <header id="home">
 
       <nav id="nav-wrap">
-
          <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-         <ul id="nav" class="nav">
+         <ul id="nav" class="nav"">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact Me</a></li>
+
          </ul> <!-- end #nav -->
+         <div>
+   <p style="border: 1px solid; max-width: 800px; margin: 0 auto; padding: 10px;">tei.villanueva@gmail.com / 206.617.255</p>
+</div>
+
+</div>
+
+
+
+
 
       </nav> <!-- end #nav-wrap -->
+    
 
       <div class="row banner">
          <div class="banner-text">
-            <h1 class="responsive-headline">Hi, I'm Gwyn</h1>
+            <h2 style="margin-bottom: 60px; color: rgb(104, 205, 225); font-size: 40px;" >Hi, I'm Thea</h2>
+            <h1 class="responsive-header" style="color: rgb(70, 188, 212)">
+               <span class="animated-letter">W</span>
+               <span class="animated-letter">e</span>
+               <span class="animated-letter">l</span>
+               <span class="animated-letter">c</span>
+               <span class="animated-letter">o</span>
+               <span class="animated-letter">m</span>
+               <span class="animated-letter">e</span>
+               <span class="animated-letter">!</span>
+              
+            </h1>
+
+            <p>page has been visited <a id="counter"></a> times </p>
             
-            <p>and this page has been viewed <a id="counter"></a> times :) </p> 
             <ul class="social">
-               <li><a href="https://twitter.com/madebygps"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://madebygps.com"><i class="fa fa-external-link"></i></a></li>
-               <li><a href="https://linkedin.com/in/gwyneth-pena"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://instagram.com/madebygps"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="https://youtube.com/madebygps"><i class="fa fa-youtube"></i></a></li>
-               <li><a href="https://github.com/madebygps/cgc-azure-resume"><i class="fa fa-github"></i></a></li>
+               <li><a style="color: rgb(70, 188, 212)" href="https://linkedin.com/in/thea"><i class="fa fa-linkedin"></i></a></li>
+               <li><a style="color: rgb(70, 188, 212)" href="https://github.com/chickenoregg"><i class="fa fa-github"></i></a></li>
             </ul>
          </div>
       </div>
@@ -74,232 +167,273 @@
 
    </header> <!-- Header End -->
 
-
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
+   <!-- About Section -->
+   <section id="about" style="background-color: rgb(49, 58, 68); border: 1px solid black;">
 
       <div class="row">
-
          <div class="three columns">
-
-            <img class="profile-pic"  src="images/me.png" alt="" />
-
+            <img class="profile-pic" src="images/browncat.png" alt="" />
          </div>
 
          <div class="nine columns main-col">
-
             <h2>ABOUT ME</h2>
-
-            <p> Hi, I'm Gwyneth Pena-Siguenza, <span>Training Architect at <a href="https://acloud.guru">A Cloud Guru</a></span>, <span> <a href="https://mvp.microsoft.com/en-us/PublicProfile/5003866">Azure MVP</a></span>
-               and <span><a href="https://youtube.com/madebygps">YouTuber</a></span> focused on making cloud learning more accessible and less daunting for everyone. 
+            <p class="responsive-headline" style="color: rgb(70, 188, 212)">
                
-         </br>
-      </br>
-       I built this page as part of the <span><a href="https://github.com/madebygps/cgc-azure-resume">Cloud Guru Azure Resume Challenge.</a></span>
-            
+               Hello, I'm Thea. I pursued the C# track during my studies at Western Governors University, where I earned my degree in Software Development. Additionally, I gained practical experience and enhanced my skills through my time at Ada Developers Academy, specializing in full-stack development. While my focus has primarily been on C#, I also have a solid foundation in the Python tech stack for full-stack development.
+               <br /><br />
+               My finance background has sharpened my analytical and problem-solving skills, allowing me to approach software development projects with a meticulous mindset. Additionally, my customer service experience has taught me the importance of effective communication and understanding user needs, enabling me to develop user-centric software solutions.
+               <br /><br />
+               Let's collaborate to build innovative software solutions that deliver exceptional value to end users by combining my technical expertise with the insights gained from my finance and customer service background.
+               <br /><br />
+               *
+               This portfolio was part of the <span><a href="https://github.com/madebygps/cgc-azure-resume">Azure Resume Challenge.</a></span>
+            </p>
 
-         </div> <!-- end .main-col -->
+            <hr>
 
-      </div>
-
-   </section> <!-- About Section End-->
-
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Certifications</span></h1>
          </div>
+      </div> <!-- end .main-col -->
+   </section> <!-- About Section End -->
 
-         <div class="nine columns main-col">
+   <!-- Resume Section -->
 
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>AWS Certified Developer Associate</h3>
-                  <p class="info"><em class="date">March 2018</em></p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Azure Fundamentals AZ900</h3>
-                  <p class="info"><em class="date">July 2020</em></p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>LPI Linux Essentials</h3>
-                  <p class="info"><em class="date">February 2021</em></p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>A Cloud Guru</h3>
-                  <p class="info">Associate Community Training Architect <span>&bull;</span> <em class="date">November 2020 - Present</em></p>
-
-                  <p>
-                  <li>Creating awesome cloud computing content.</li> 
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Powwr | A Cognitive Energy Company</h3>
-                  <p class="info">Cloud Engineer <span>&bull;</span> <em class="date">May 2019 - August 2020</em></p>
-
-                  <p>
-                     <li>Developed cloud native solutions in Azure</li>
-                     <li>CI/CD with Azure DevOps</li>
-                     <li>Full stack .NET development</li>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Powwr | A Cognitive Energy Company</h3>
-                  <p class="info">System Administrator <span>&bull;</span> <em class="date">September 2018 - May 2019</em></p>
-
-                  <p>
-                  <li>Atlassian suite administration</li>
-                  <li>O365 suite administration</li>
-                  <li>SQL server 2019 administration</li>
-                  <li>Azure infrastructure administration</li>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Tech Boston</h3>
-                  <p class="info">Help Desk Analyst <span>&bull;</span> <em class="date">October 2016 - August 2018</em></p>
-
-                  <p>
-                  <li>Front line help desk IT support</li>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Apple Danbury</h3>
-                  <p class="info">Mobile tech <span>&bull;</span> <em class="date">December 2014 - August 2016</em></p>
-
-                  <p>
-                  <li>Repaired software and hardware issues related to iOS devices</li>
-                  
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-
-      
-
-   </section> <!-- Resume Section End-->
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-            <ul class="social-links">
-               <li><a href="https://twitter.com/madebygps"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://linkedin.com/in/gwyneth-pena"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://madebygps.com"><i class="fa fa-external-link"></i></a></li>
-               <li><a href="https://instagram.com/madebygps"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="https://youtube.com/madebygps"><i class="fa fa-youtube"></i></a></li>
-               <li><a href="https://github.com/madebygps/cgc-azure-resume"><i class="fa fa-github"></i></a></li>
+   <section style="background-color: rgb(18, 35, 54)">
+      <div class="row item">
+         <div style="margin-top: 80px;">
+            <h1 style="color: rgb(74, 101, 131)"><span>Skills</span></h1>
+            <ul class="skills">
+               <li>
+                  <img src="images/python.png" alt="Python">
+                  <p>Python</p>
+               </li>
+               <li>
+                  <img src="images/charp.png" alt="C#">
+                  <p>C#</p>
+               </li>
+               <li>
+                  <img src="images/net.png" alt=".NET">
+                  <p>.NET</p>
+               </li>
+               <li>
+                  <img src="images/flasklogo.jpg" alt="Flask">
+                  <p>Flask</p>
+               </li>
+               <li>
+                  <img src="images/sqlserver.png" alt="SQL Server">
+                  <p>SQL Server</p>
+               </li>
+               <li>
+                  <img src="images/visual studio.jpeg" alt="Visual Studio">
+                  <p>Visual Studio</p>
+               </li>
+               <li>
+                  <img src="images/visual studio code.jpeg" alt="Visual Studio Code">
+                  <p>VS Code</p>
+               </li>
+               <li>
+                  <img src="images/html.png" alt="HTML">
+                  <p>HTML & CSS</p>
+               </li>
+               <li>
+                  <img src="images/react.png" alt="React">
+                  <p>React</p>
+               </li>
+               <li>
+                  <img src="images/azure-cloud.png" alt="Azure">
+                  <p>Azure</p>
+               </li>
             </ul>
+         </div>
+      </div>
+   </section>
 
+   <main">
+      <section id="resume" style="background-color: rgb(230, 223, 213);">
+
+         <!-- Education -->
+         <div class="row education">
+            <div class="three columns header-col">
+               <h1><span>Education</span></h1>
+            </div>
+            <div class="nine columns main-col">
+               <div>
+                  <div class="row item">
+                     <div class="twelve columns">
+                        <h4 style="color: rgb(74, 101, 131)">Bachelor of Science, Software Development - Western Governors University</h4>
+                        <p class="info"><em class="date">2023 | Salt Lake City, Utah</em></p>
+                     </div>
+                  </div> <!-- item end -->
+
+                  <div class="row item">
+                     <div class="twelve columns">
+                        <h4 style="color: rgb(74, 101, 131)">Ada Developers Academy</h4>
+                        <p class="info"><em class="date">2023 | Seattle, WA</em></p>
+                     </div>
+                  </div> <!-- item end -->
+
+                  <div class="row item">
+                     <div class="twelve columns">
+                        <h4 style="color: rgb(74, 101, 131)">Azure Certified Developer Associate - In Progress</h4>
+                        <p class="info"><em class="date">June 2023</em></p>
+                     </div>
+                  </div> <!-- item end -->
+
+                  <div class="row item">
+                     <div class="twelve columns">
+                        <h4 style="color: rgb(74, 101, 131)">CompTIA A+</h4>
+                        <p class="info"><em class="date">April 2023</em></p>
+                     </div>
+                  </div> <!-- item end -->
+
+                  <div class="row item">
+                     <div class="twelve columns">
+                        <h4 style="color: rgb(74, 101, 131)">Google Professional Support</h4>
+                        <p class="info"><em class="date">2022</em></p>
+                     </div>
+                  </div> <!-- item end -->
+
+
+               </div> <!-- main-col end -->
+
+            </div>
+
+         </div> <!-- End Education -->
+
+         <!-- Work -->
+         <div class="row work">
+            <div class="three columns header-col">
+               <h1><span>Projects</span></h1>
+            </div>
+
+            <div class="nine columns main-col">
+
+               <!-- Project 1 -->
+               <div class="row item">
+                  <div class="twelve columns">
+                     <h2 style="color: rgb(74, 101, 131)">Appointment-App</h2>
+                     <h5 style="color: rgb(74, 101, 131)">C#, Winforms, MS-SQL Server 2019, Visual Studio</h5>
+                     <p>
+                        This project involves creating a scheduling application with various features. It includes a log-in form that determines the user's location and translates messages into multiple languages. Users can add, update, and delete customer records and appointments, view the calendar, and handle time zone adjustments. Exception controls are implemented to prevent scheduling conflicts and ensure data validity. The project generates reports and tracks user activity.
+                     </p>
+                     <p style="color: rgb(74, 101, 131)">View source code ---> <a href="https://github.com/chickenoregg/Appointment-App">Github</a></p>
+                     <img src="images/schedule-img.png" alt="">
+                  </div>
+               </div> <!-- item end -->
+
+               <!-- Project 2 -->
+               <div class="row item" style="margin-top: 30px;">
+                  <div class="twelve columns">
+                     <h2 style="color: rgb(74, 101, 131)">Course-Tracker-App</h2>
+                     <h5 style="color: rgb(74, 101, 131)">C#, Xamarin, SQLite, Visual Studio</h5>
+                     <p>
+                        The Course Tracker Mobile App is a mobile application developed using C# and Xamarin, specifically designed to support students in effectively managing their academic courses and progress. With a range of features, including term tracking, course management, assessment tracking, objective and performance tracking, schedule management, and notifications and reminders, the app ensures that users stay organized and on top of their academic journey. Users can create and manage multiple academic terms, add courses with essential details, set reminders for assessments, define objectives and track progress, create personalized schedules, and receive timely notifications for important course-related events.
+                     </p>
+                     <p style="color: rgb(74, 101, 131)">View source code ---> <a href="https://github.com/chickenoregg/Course-Tracker-App">Github</a></p>
+
+                     <img src="images/mobile-img.png" alt="">
+                  </div>
+               </div> <!-- item end -->
+
+               <!-- Project 3 -->
+               <div class="row item" style="margin-top: 30px;">
+                  <div class="twelve columns">
+                     <h2 style="color: rgb(74, 101, 131)">Azure Resume Challenge</h2>
+                     <h5 style="color: rgb(74, 101, 131)">C#, Azure Function, Cosmo DB, Blob Storage, Github Actions, Visual Studio Code</h5>
+                     <p>
+                        I participated in the Azure Resume Challenge to demonstrate my proficiency in cloud technologies and showcase my skills. This challenge involved creating a dynamic and interactive Azure-based resume using a range of Azure services and tools. I utilized Azure Functions, Azure Storage, and Azure DevOps to build a scalable and modern resume application. Through this challenge, I was able to deepen my understanding of Azure and enhance my ability to design and deploy cloud-based solutions. It was an exciting opportunity that allowed me to combine my passion for technology with creative resume-building, highlighting my expertise in cloud computing. View Source Code
+                     </p>
+
+
+                     <img src="images/azure.png" alt="">
+                  </div>
+               </div> <!-- item end -->
+
+               <!-- Project 4 -->
+
+               <div class="row item" style="margin-top: 30px;">
+                  <div class="twelve columns">
+                     <h2 style="color: rgb(74, 101, 131)">Inventory-App</h2>
+                     <h5 style="color: rgb(74, 101, 131)">C#, Winforms, MS SQL Server 2019, Visual Studio</h5>
+                     <p>
+                        The Inventory-App project involves creating a C# application with a graphical user interface (GUI) for managing parts and products. The GUI consists of different forms for adding, modifying, and deleting parts and products. Users can perform various operations such as searching, adding, modifying, and deleting parts and products. The application ensures data accuracy and convenience through exception handling code. It provides an easy-to-use interface for managing inventory records efficiently.
+                     </p>
+                     <p style="color: rgb(74, 101, 131)">View source code ---> <a href="https://github.com/chickenoregg/Inventory-App">Github</a></p>
+
+                  </div>
+               </div> <!-- item end -->
+
+            </div> <!-- main-col end -->
+         </div> <!-- End Work -->
+
+      </section> <!-- Resume Section End -->
+   </main>
+
+   <!-- Contact Section -->
+   <section id="contact" style="background-color: rgb(18, 35, 54); padding: 40px 0;">
+      <div class="row">
+         <div class="twelve columns">
+            <h2 style="color: #ccc; margin-bottom: 20px; text-align: center;">Contact Me</h2>
+         </div>
+      </div>
+      <div class="row">
+         <div class="twelve columns" style="text-align: center;">
+            <form action="mailto:tei.villanueva@gmail.com" method="POST" enctype="text/plain">
+               <label for="name">Your Name:</label>
+               <input type="text" id="name" name="name" placeholder="Your Name" required>
+               <label for="email">Your Email:</label>
+               <input type="email" id="email" name="email" placeholder="Your Email" required>
+               <label for="message">Message:</label>
+               <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+               <input type="submit" value="Send Message" style="margin: 0 auto; display: block; width: 150px;">
+            </form>
+         </div>
+      </div>
+   </section>
+
+
+   <!-- footer -->
+   <footer>
+      <div class="row">
+         <div class="twelve columns">
+            <ul class="social-links">
+               <li><a style="color: rgb(70, 188, 212)" href="https://linkedin.com/in/thea"><i class="fa fa-linkedin"></i></a></li>
+               <li><a style="color: rgb(70, 188, 212)" href="https://github.com/chickenoregg"><i class="fa fa-github"></i></a></li>
+            </ul>
             <ul class="copyright">
                <a href="https://www.styleshout.com/free-templates/ceevee/"> Template by CeeVee </a>
-                
             </ul>
-
          </div>
-
          <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
       </div>
-
    </footer> <!-- Footer End-->
 
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <!-- Java Script -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
    <script src="js/jquery.flexslider.js"></script>
    <script src="js/waypoints.js"></script>
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
+
+<script>
+  // Animation for Hi, Thea
+  var text = document.querySelector(".responsive-header");
+  var letters = text.innerText.split("");
+  text.innerHTML = "";
+
+  letters.forEach(function (letter, index) {
+    var span = document.createElement("span");
+    span.innerText = letter;
+    span.classList.add("animated-letter");
+    span.style.animationDelay = index * 0.1 + "s"; // Adjust the delay time as needed
+    text.appendChild(span);
+  });
+</script>
+
+
+
 
 </body>
 

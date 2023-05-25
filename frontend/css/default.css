@@ -69,6 +69,15 @@ video {
    display: inline-block;
 }
 
+#home {
+   background-color: rgb(18, 35, 54);
+}
+
+#resume {
+   background-color: rgb(17,37,59)
+}
+
+
 audio:not([controls]) {
    display: none;
    height: 0;
@@ -802,6 +811,102 @@ properly.
 	text-align: center !important;
 }
 
+@keyframes fadeEffect {
+   0% { opacity: 0; }
+   50% { opacity: 1; }
+   100% { opacity: 0; }
+}
+
+.responsive-header {
+   animation: fadeEffect 3s infinite;
+   color: rgb(247, 180, 0);
+}
+
+body{
+   color: ;
+}
+
+<style>
+   .skills {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      padding: 0;
+   }
+
+   .skills li {
+      margin: 0 10px;
+   }
+
+   .skills img {
+      width: 100px;
+      /*Adjustthesizeasneeded*/height: 100px;
+      /*Adjustthesizeasneeded*/animation: moveUpDown 2s ease-in-out infinite alternate;
+      -webkit-animation: moveUpDown .75s ease-in-out infinite alternate;
+}
+
+   @keyframes moveUpDown {
+      0% {
+         transform: translateY(0);
+      }
+      100% {
+         transform: translateY(-10px);
+         -webkit-transform: translateY(-10px);
+         -moz-transform: translateY(-10px);
+         -ms-transform: translateY(-10px);
+         -o-transform: translateY(-10px);
+}
+   }
+
+   hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 0;
+      border-top: 1px solid #ccc;
+   }
+</style>
 
 
+.contact {
+   margin-top: 50px;
+}
 
+.contact form {
+   margin-top: 20px;
+}
+
+.contact form label {
+   display: block;
+   margin-bottom: 5px;
+   font-weight: bold;
+   color: #333;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+.contact form textarea {
+   height: 150px;
+}
+
+.contact form input[type="submit"] {
+   margin-top: 10px;
+   padding: 10px 20px;
+   background-color: #4abc7b;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.contact form input[type="submit"]:hover {
+   background-color: #369f61;
+}
