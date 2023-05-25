@@ -27,85 +27,101 @@
    <!-- Favicons -->
    <link rel="shortcut icon" href="favicon.png">
 
-   <style>
-      .projects-container {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: space-between;
-      }
+<style>
+   .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
 
-      .project-column {
-         width: calc(33.33% - 20px);
-         margin-bottom: 40px;
-      }
+   .project-column {
+      width: calc(33.33% - 20px);
+      margin-bottom: 40px;
+   }
 
-      .skills {
-         list-style: none;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         margin-top: 20px;
-         padding: 0;
-      }
+   .skills {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      padding: 0;
+   }
 
-      .skills li {
-         margin: 0 10px;
-         text-align: center;
-      }
+   .skills li {
+      margin: 0 10px;
+      text-align: center;
+   }
 
-      .skills img {
-         width: 500px; /* Adjust the size as needed */
-         height: 100px; /* Adjust the size as needed */
-         border-radius: 50%;
-      }
+   .skills img {
+      width: 500px; /* Adjust the size as needed */
+      height: 100px; /* Adjust the size as needed */
+      border-radius: 50%;
+   }
 
-      hr {
-         margin-top: 20px;
-         margin-bottom: 20px;
-         border: 0;
-         border-top: 1px solid #ccc;
-      }
+   hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 0;
+      border-top: 1px solid #ccc;
+   }
 
-      body {
-         padding: 50px;
-         max-width: 1200px; /* Adjust the value as needed */
-         margin: 0 auto;
-         padding: 0 20px;
-         background: linear-gradient(to top, rgb(55, 50, 51), rgb(32, 51, 73));
+   body {
+      padding: 50px;
+      max-width: 1200px; /* Adjust the value as needed */
+      margin: 0 auto;
+      padding: 0 20px;
+      background: linear-gradient(to top, rgb(55, 50, 51), rgb(32, 51, 73));
+   }
 
-      }
+   /* Animation for "Hi, Thea" */
+   .banner-text h1 {
+      position: relative;
+      opacity: 0;
+      top: -50px;
+   }
 
-      /* Animation for "Hi, Thea" */
-      .banner-text h1 {
-         position: relative;
-         opacity: 0;
-         top: -50px;
-      }
+   .animated-letter {
+      display: inline-block;
+      animation-name: letterAnimation;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-timing-function: ease-out;
+      opacity: 0;
+      transform: translateY(-20px);
+   }
 
-      .animated-letter {
-         display: inline-block;
-         animation-name: letterAnimation;
-         animation-duration: 1s;
-         animation-fill-mode: both;
-         animation-timing-function: ease-out;
+   @keyframes letterAnimation {
+      0% {
          opacity: 0;
          transform: translateY(-20px);
       }
-
-      @keyframes letterAnimation {
-         0% {
-            opacity: 0;
-            transform: translateY(-20px);
-         }
-         100% {
-            opacity: 1;
-            transform: translateY(0);
-         }
+      100% {
+         opacity: 1;
+         transform: translateY(0);
       }
-      .nine.columns {
-      width: 80%; /* Adjust the width as needed */
    }
-   </style>
+
+   .nine.columns {
+      width: 85%; /* Adjust the width as needed */
+   }
+
+   /* Media queries for responsive skill images */
+   @media (max-width: 768px) {
+      .skills img {
+         width: 80px; /* Adjust the width for smaller screens */
+         height: 80px; /* Adjust the height for smaller screens */
+      }
+   }
+
+   @media (max-width: 480px) {
+      .skills img {
+         width: 60px; /* Adjust the width for even smaller screens */
+         height: 60px; /* Adjust the height for even smaller screens */
+      }
+   }
+</style>
+
 
 </head>
 
