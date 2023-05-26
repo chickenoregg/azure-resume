@@ -44,7 +44,7 @@ const handleLike = () => {
       const likeCount = document.getElementById("likeCount");
       likeCount.textContent = updatedLikes;
       localStorage.setItem("likeCount", updatedLikes);
-      document.getElementById("likeMessage").textContent = "Thanks for liking!";
+      document.getElementById("likeMessage").textContent = "Thanks for stopping by!";
     })
     .catch((error) => {
       console.log(error);
