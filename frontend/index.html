@@ -47,8 +47,53 @@
       justify-content: center;
       margin-top: 20px;
       padding: 0;
+
    }
 
+   
+   section ul.skills {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      padding: 0;
+   }
+
+   section ul.skills li {
+      margin: 0 10px;
+      text-align: center;
+   }
+
+   section ul.skills img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+   }
+
+   section ul.skills p {
+      margin-top: 10px;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+   }
+
+   #skills-title {
+      color: rgb(74, 101, 131);
+      margin-bottom: 30px;
+      font-size: x-large;
+      text-decoration: none;
+   }
+
+   #skills-title::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: rgb(70, 188, 212);
+   }
    .skills li {
       margin: 0 10px;
       text-align: center;
@@ -59,6 +104,8 @@
       height: 100px; /* Adjust the size as needed */
       border-radius: 50%;
    }
+
+
 
    hr {
       margin-top: 20px;
@@ -72,7 +119,16 @@
       max-width: 1300px; /* Adjust the value as needed */
       margin: 0 auto;
       padding: 0 20px;
-      background: linear-gradient(to top, rgb(55, 50, 51), rgb(32, 51, 73));
+      background: linear-gradient(to top, rgb(56, 132, 148), rgb(32, 51, 73));
+   }
+
+   input[type="text"],
+   input[type="email"],
+   textarea {
+      background-color: rgb(55,126,143) !important;
+   }
+   ::placeholder{
+      color: black;
    }
 
    /* Animation for "Hi, Thea" */
@@ -218,7 +274,13 @@
    <section style="background-color: rgb(18, 35, 54)">
       <div class="row item">
          <div style="margin-top: 80px;">
-            <h1 style="color: rgb(74, 101, 131)"><span>Skills</span></h1>
+            <h1 id="skills-title" style="color: rgb(74, 101, 131); margin-bottom: 30px; font-size: x-large; position: relative; text-align: center;">
+  <span style="position: relative; z-index: 1;">SKILLS</span>
+  <span style="position: absolute; bottom: -5px; left: 0; width: 100%; height: 2px; background-color: rgb(70, 188, 212);"></span>
+</h1>
+
+
+         
             <ul class="skills">
                <li>
                   <img src="images/python.png" alt="Python">
@@ -229,7 +291,7 @@
                   <p>C#</p>
                </li>
                <li>
-                  <img src="images/net.png" alt=".NET">
+                  <img src="images/netcore.png" alt=".NET">
                   <p>.NET</p>
                </li>
                <li>
@@ -241,7 +303,7 @@
                   <p>SQL Server</p>
                </li>
                <li>
-                  <img src="images/visual studio.jpeg" alt="Visual Studio">
+                  <img src="images/vs.jpeg" alt="Visual Studio">
                   <p>Visual Studio</p>
                </li>
                <li>
@@ -271,17 +333,17 @@
          <!-- Education -->
          <div class="row education">
    <div class="three columns header-col">
-      <h1 style="color: rgb(74,101,131);"><span>Education</span></h1>
+      <h1 style="color: rgb(74,101,131); margin-bottom: 30px;"><span>Education</span></h1>
    </div>
    <div class="nine columns main-col">
       <div>
          <div class="row item">
-            <div class="twelve columns">
+            <div class="twelve columns" style="margin-bottom: 15px;">
                <h4 style="color: rgb(74, 101, 131)">
                   <img src="images/wgu.png" style="width: 80px; height: 80px; float: left; margin-right: 20px;" alt="">
-                  Bachelor of Science, Software Development - Western Governors University
+                  Bachelor of Science, Software Development | Western Governors University
                </h4>
-               <p class="info"><em class="date">2023 | Salt Lake City, Utah</em></p>
+               <p class="info"><em class="date">Salt Lake City, Utah</em></p>
             </div>
          </div> <!-- item end -->
 
@@ -289,9 +351,10 @@
             <div class="twelve columns">
                <h4 style="color: rgb(74, 101, 131)">
                   <img src="images/ada.png" style="width: 75px; height: 80px; float: left; margin-right: 20px;" alt="">
+                  Python Full Stack Development |  
                   Ada Developers Academy
                </h4>
-               <p class="info"><em class="date">2023 | Seattle, WA</em></p>
+               <p class="info"><em class="date">Seattle, WA</em></p>
             </div>
          </div> <!-- item end -->
 
@@ -332,7 +395,7 @@
          <!-- Work -->
          <div class="row work">
             <div class="three columns header-col">
-               <h1 style="color: rgb(74,101,131);"><span>Projects</span></h1>
+               <h1 style="color: rgb(74,101,131); margin-bottom: 30px;"><span>Projects</span></h1>
             </div>
 
             <div class="nine columns main-col">
@@ -400,7 +463,7 @@
    </main>
 
    <!-- Contact Section -->
-   <section id="contact" style="background-color: rgb(18, 35, 54); padding: 40px 0;">
+   <section id="contact" style="background-color: rgb(18, 35, 54); padding: 40px 0; margin-top: 1px;">
       <div class="row">
          <div class="twelve columns">
             <h2 style="color: #ccc; margin-bottom: 20px; text-align: center;">Contact Me</h2>
