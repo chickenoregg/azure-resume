@@ -10,5 +10,8 @@ namespace Company.Function
 
         [JsonProperty(PropertyName ="count")]
         public int Count { get; set; }
+
+        [JsonProperty(PropertyName = "likes")]
+        public int Likes { get; set; }
     }
 }

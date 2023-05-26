@@ -22,7 +22,6 @@
 
    <!-- Script -->
    <script src="js/modernizr.js"></script>
-   <script src="js/main.js"></script>
 
    <!-- Favicons -->
    <link rel="shortcut icon" href="favicon.png">
@@ -117,7 +116,8 @@
    input[type="text"],
    input[type="email"],
    textarea {
-      background-color: rgb(18, 139, 137) !important;
+      background-color: rgb(39, 215, 212) !important;
+      color: black !important;
    }
    ::placeholder{
       color: black;
@@ -183,7 +183,7 @@
          <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
          <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-         <ul id="nav" class="nav"">
+         <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
             <li><a class="smoothscroll" href="#about">About</a></li>
             <li><a class="smoothscroll" href="#resume">Resume</a></li>
@@ -224,12 +224,22 @@
                <li><a style="color: rgb(70, 188, 212)" href="https://linkedin.com/in/thea"><i class="fa fa-linkedin"></i></a></li>
                <li><a style="color: rgb(70, 188, 212)" href="https://github.com/chickenoregg"><i class="fa fa-github"></i></a></li>
             </ul>
+            <!-- Add a like button and a message container -->
+
+            <button id="likeButton">Like</button>
+            <p>Like count: <span id="likeCount"></span></p>
+            <p id="likeMessage"></p>
+
          </div>
       </div>
 
       <p class="scrolldown">
          <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
       </p>
+
+      <!-- Add a like button and a message container -->
+
+
 
    </header> <!-- Header End -->
 
@@ -536,6 +546,8 @@
     text.appendChild(span);
   });
 </script>
+<script src="js/main.js"></script>
+
 
 
 
